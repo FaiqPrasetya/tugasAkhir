@@ -24,7 +24,7 @@ h1 {
 }
 
 .wrapper>* {
-    margin: 5px;
+    margin: 2px;
 }
 
 .media {
@@ -58,6 +58,10 @@ h1 {
 .layer p {
     transition: all 0.9s ease;
     transform: scale(0.1);
+}
+
+.layer a {
+    text-decoration: none;
 }
 
 p {

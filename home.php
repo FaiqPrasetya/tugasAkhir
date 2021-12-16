@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 
 <head>
@@ -16,60 +19,57 @@
             <li><a href="#" class="nav-link">Contact Us</a></li>
         </ul>
     </div>
-    <!-- <h1>Gallery with hover effect</h1> -->
+
+    <!--  -->
+
+    <!--  -->
 
     <div class="wrapper">
         <div class="media">
             <div class="layer">
-                <a href="">+ Dummy!</a>
+                <a style="text-decoration: none" href=""><b>ASCENT</b></a>
             </div>
-            <img src="https://images.unsplash.com/photo-1431818563807-927945852ab6?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
+            <img src="img/maps/ascent.png" alt="ascent" />
+        </div>
+        <div class="media">
+            <div class="layer"> 
+                <a style="text-decoration: none" href=""><b>BIND</b></a>
+            </div>
+            <img src="img/maps/bind.png" alt="bind" />
         </div>
         <div class="media">
             <div class="layer">
-                <a href="">+ Dummy!</a>
+                <a style="text-decoration: none" href=""><b>BREEZE</b></a>
             </div>
-            <img src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
-        </div>
-        <div class="media">
-            <div class="layer">
-                <a href="">+ Dummy!</a>
-            </div>
-            <img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="" />
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="media">
-            <div class="layer">
-                <a href="">+ Dummy!</a>
-            </div>
-            <img src="https://images.unsplash.com/photo-1431818563807-927945852ab6?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
-        </div>
-        <div class="media">
-            <div class="layer">
-                <a href="">+ Dummy!</a>
-            </div>
-            <img src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
-        </div>
-        <div class="media">
-            <div class="layer">
-                <a href="">+ Dummy!</a>
-            </div>
-            <img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="" />
+            <img src="img/maps/breeze.png" alt="breeze" />
         </div>
     </div>
     <div class="wrapper">
         <div class="media">
             <div class="layer">
-                <a href="">+ Dummy!</a>
+                <a style="text-decoration: none" href=""><b>FRACTURE</b></a>
             </div>
-            <img src="https://images.unsplash.com/photo-1431818563807-927945852ab6?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
+            <img src="img/maps/fracture.png" alt="fracture" />
         </div>
         <div class="media">
             <div class="layer">
-                <a href="">+ Dummy!</a>
+                <a style="text-decoration: none" href=""><b>HAVEN</b></a>
             </div>
-            <img src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
+            <img src="img/maps/haven.png" alt="haven" />
+        </div>
+        <div class="media">
+            <div class="layer">
+                <a style="text-decoration: none" href=""><b>ICEBOX</b></a>
+            </div>
+            <img src="img/maps/icebox.png" alt="icebox" />
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="media">
+            <div class="layer">
+                <a style="text-decoration: none" href=""><b>SPLIT</b></a>
+            </div>
+            <img src="img/maps/split.png" alt="split" />
         </div>
     </div>
 </body>

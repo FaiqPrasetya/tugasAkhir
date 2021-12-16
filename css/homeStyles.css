@@ -17,6 +17,10 @@ li {
     background-color: #ffffff;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* This class is applied to the containing div <div class="nav"> and is used to set the background color and height of the navbar */
 
