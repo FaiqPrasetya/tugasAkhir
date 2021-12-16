@@ -4,51 +4,90 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Vanilla Bootstrap v4.2.1 Theme</title>
+    <!-- Judul Tab Browser -->
+    <title>STRATS</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Stylesheet untuk main -->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontAwesome.css">
     <link rel="stylesheet" href="css/hero-slider.css">
     <link rel="stylesheet" href="css/templatemo-main.css">
     <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/indexLogin.css">
 
+    <!-- End of Stylesheet -->
+
+    <!-- Ambil Font google -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
+    <!-- Ambil JS modernizr -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
 </head>
 
 <body>
 
+    <!-- Navbar Samping -->
     <div class="fixed-side-navbar">
         <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#home"><span>Intro</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#summary"><span>Quick Summary</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#feed"><span>Valorant Feed</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#history"><span>History</span></a></li>
         </ul>
     </div>
+    <!-- End of navbar samping -->
 
+    <!-- Content ke 1 -->
+    <!-- Hero page, video, halaman login -->
     <div class="parallax-content baner-content" id="home">
         <div class="container">
             <div class="first-content">
 
+                <!-- Hero Title -->
                 <h1>VALORANT</h1>
                 <span>Super secret <em>Strats</em> Database</span>
+
+                <!-- Button Discover More dan Login page -->
                 <div class="primary-button">
                     <a href="#summary">Discover More</a>
-                    <a href="#">Member Login</a>
+
+                    <!-- Button untuk menampilkan Login  -->
+                    <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Member Login</a>
+                    <div id="id01" class="modal">
+
+                        <!-- Form login  -->
+                        <form class="modal-content animate" action="backend/login-broker.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+                            <!-- Input dari form login -->
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="username" autocomplete="off" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="username" autocomplete="off" required>
+
+                                <button type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+                <!-- End of Discover more dan login -->
             </div>
         </div>
     </div>
+    <!-- End of Content ke 1 -->
 
-
+    <!-- Content ke 2 & 3 -->
     <div class="service-content" id="summary">
         <div class="container">
             <div class="row">
+                <!-- Content ke 2 -->
                 <div class="col-md-4">
                     <div class="left-text">
                         <h4>More About <b>ALTI Carni</b></h4>
@@ -61,47 +100,66 @@
                             <li>- Has the dragon skin lmao</li>
                         </ul>
                         <div class="primary-button">
-                            <a href="#feed">Learn More</a>
+                            <a href="https://twitter.com/carni1337">Twitter</a>
                         </div>
                     </div>
                 </div>
+                <!-- End of Content ke 2 -->
+
+                <!-- Content ke 3 -->
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="service-item">
-                                <h4>2x SPORTIVOR WINNER</h4>
+                                <h4>Scycon UNAIR (2nd Place)</h4>
                                 <div class="line-dec"></div>
-                                <p>Sed lacinia ligula est, at venenatis ex iaculis quis. Morbi sollicitudin nulla eget odio pellentesque.</p>
+                                <p>Chelind Fellow</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="service-item">
-                                <h4>Unique &amp; Creative Ideas</h4>
+                                <h4>King of Kings Valorant RRQ (32th)</h4>
                                 <div class="line-dec"></div>
-                                <p>Sed lacinia ligula est, at venenatis ex iaculis quis. Morbi sollicitudin nulla eget odio pellentesque.</p>
+                                <p>Chelind Fellow</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="service-item">
-                                <h4>Effective Team Work</h4>
+                                <h4>Smala Cup 2021 (1st Place)</h4>
                                 <div class="line-dec"></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia ligula est, at venenatis ex iaculis quis.</p>
+                                <p>Liquid Astro</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="service-item">
-                                <h4>Fast Support 24/7</h4>
+                                <h4>King of Kings Valorant RRQ s2 (32th)</h4>
                                 <div class="line-dec"></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia ligula est, at venenatis ex iaculis quis.</p>
+                                <p>Liquid Galaxy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Garuda Valorant Indonesia (16th)</h4>
+                                <div class="line-dec"></div>
+                                <p>Liquid Galaxy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>SI Fest UNSRI (1st Place)</h4>
+                                <div class="line-dec"></div>
+                                <p>Liquid Galaxy</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End of Content ke 3 -->
             </div>
         </div>
     </div>
+    <!-- End of Content ke 2 & 3-->
 
-
+    <!-- Content ke 4 -->
     <div class="parallax-content projects-content" id="feed">
         <div class="container">
             <div class="row">
@@ -166,44 +224,9 @@
             </div>
         </div>
     </div>
+    <!-- End of Content ke 4 -->
 
-
-    <div class="tabs-content" id="history">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <div class="wrapper">
-                        <section id="first-tab-group" class="tabgroup">
-                            <div id="tab1">
-                                <img src="img/dummy.png" alt="">
-                                <p>Please do not re-distribute our template ZIP file on your template collection sites. You can make a screenshot and a link back to our website. This template can be used for personal or commercial purposes by end-users.</p>
-                            </div>
-                            <div id="tab2">
-                                <img src="img/dummy.png" alt="">
-                                <p>Aliquam eu ultrices risus, sed condimentum diam. Duis risus nulla, elementum vitae nisi a, ornare maximus nisl. Morbi et vehicula est. Cras at vulputate justo. Cras eu nulla metus. Ut et pretium velit. Pellentesque at neque
-                                    tristique dui tempor venenatis.</p>
-                            </div>
-                            <div id="tab3">
-                                <img src="img/dummy.png" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia ligula est, at venenatis ex iaculis quis. Morbi sollicitudin nulla eget odio pellentesque, sed cursus diam iaculis.</p>
-                            </div>
-                            <div id="tab4">
-                                <img src="img/dummy.png" alt="">
-                                <p>Duis risus nulla, elementum vitae nisi a, ornare maximus nisl. Morbi et vehicula est. Cras at vulputate justo. Cras eu nulla metus. Ut et pretium velit. Pellentesque at neque tristique.</p>
-                            </div>
-                        </section>
-                        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                            <li><a href="#tab1" class="active">2008 - 2014</a></li>
-                            <li><a href="#tab2">2014 - 2016</a></li>
-                            <li><a href="#tab3">2016 - 2019</a></li>
-                            <li><a href="#tab4">2019 - Now</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -223,9 +246,13 @@
             </div>
         </div>
     </footer>
+    <!-- End of Footer -->
 
 
+    <!-- Script AJAX, Login page, dan animasi dari home page ini -->
+    <!-- MAIN == dari template | SECONDARY == untuk login di halaman ini -->
 
+    <!-- AJAX + Ambil js di folder atas  (A)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
@@ -233,6 +260,10 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- End of script (A)-->
+
+    <!-- MAIN -->
     <script>
         function openCity(cityName) {
             var i;
@@ -243,8 +274,23 @@
             document.getElementById(cityName).style.display = "block";
         }
     </script>
+    <!-- MAIN -->
 
     <script>
+        // SECONDARY
+        // Script untuk login, dan tema nya diambil dari W3Schools
+        // Tema dari login ada di css/indexLogin.css
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            // END OF SECONDARY
+
+        // MAIN
         $(document).ready(function() {
             // Add smooth scrolling to all links
             $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
@@ -269,8 +315,9 @@
                 } // End if
             });
         });
+        // END OF MAIN
     </script>
-
+    <!-- End of Script page -->
 </body>
 
 </html>
