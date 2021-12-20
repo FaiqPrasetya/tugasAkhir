@@ -1,6 +1,15 @@
 <?php  
   
-session_start();  
+session_start();
+
+if ($_SESSION['status'] != 'login') {
+    header("location: index.php");
+  }
+  
+  if ($_SESSION['level'] != 1) {
+    header("Location: index.php");
+  }
+
 require('koneksi.php');  
   
 if(isset($_POST) && !empty($_FILES['strats_image']['name']) && !empty($_POST['strats_name'])){  
@@ -43,4 +52,3 @@ if(isset($_POST) && !empty($_FILES['strats_image']['name']) && !empty($_POST['st
     $_SESSION['error'] = 'Please Select Image or Write title';  
     header("Location: ");  
 }
-?>

@@ -1,4 +1,12 @@
 <?php
+session_start();
+if ($_SESSION['status'] != 'login') {
+    header("location: index.php");
+}
+
+if ($_SESSION['level'] != 1) {
+    header("Location: index.php");
+}
 include 'koneksi.php';
 $id = $_GET['id'];
 $username = $_GET['username'];
@@ -11,9 +19,8 @@ $data = mysqli_query($connect, $sql);
 
 if ($data) {
     echo "<h2>Update Success</h2>";
-    // header("Location: ../table.php");
+    header("Location: ../table.php");
 } else {
     echo "<h2>Update Failed </h2><br>" . mysqli_error($connect);
-    // header("Location: ../table.php");
+    header("Location: ../table.php");
 }
-?>

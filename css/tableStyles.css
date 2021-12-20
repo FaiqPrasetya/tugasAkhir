@@ -9,6 +9,10 @@ html {
     margin-right: auto;
 }
 
+.center tr {
+    border-radius: 20px;
+}
+
 #user {
     background-color: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
