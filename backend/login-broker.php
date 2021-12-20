@@ -15,15 +15,15 @@
         $_SESSION['username'] = $username;
         $_SESSION['status'] = 'login';
         $_SESSION['level'] = 1;
-        header('Location: home.php');
+        header('Location: ../home.php');
     } else if($row['level'] == 2){
         session_start();
         $_SESSION['username'] = $username;
         $_SESSION['status'] = 'login';
         $_SESSION['level'] = 2;
-        header('Location: home.php');
+        header('Location: ../home.php');
     } else {
-        header('Location: ../index.html');
+        header('Location: ../index.php');
         echo 'Login gagal!';
     }
 ?>

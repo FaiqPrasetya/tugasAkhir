@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+if($_SESSION['status'] != 'login') {
+    header("location: index.php");
+}
 ?>
 <html>
 
@@ -13,10 +17,16 @@ session_start();
 
     <div class="nav">
         <ul>
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link"><em>Act Now!</em></a></li>
-            <li><a href="#" class="nav-link">FAQ</a></li>
-            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li><a href="index.php" class="nav-link">Home</a></li>
+            <?php 
+                if($_SESSION['level'] == 1) {
+                    echo "<li><a href='form_register.php' class='nav-link'>Account Management</a></li>";
+                    echo "<li><a href='#' class='nav-link'>Upload Strats</a></li>";
+                }
+                if($_SESSION['status'] == 'login') {
+                    echo "<li><a href='backend/logout-broker.php' class='nav-link'>Logout</a></li>";
+                }
+            ?>
         </ul>
     </div>
 
