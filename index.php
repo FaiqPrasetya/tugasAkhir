@@ -1,4 +1,4 @@
-<?php
+<?php 
 session_start();
 
 // Hide session yang belum ada
@@ -67,13 +67,13 @@ error_reporting(-1);
                     <a href='#' onclick="document.getElementById('id01').style.display='block'" style='width:auto;'>Member Login</a>
                     <!-- Button untuk menampilkan Login  -->
                     <?php
-                    if ($_SESSION['status'] == 'login') {
-                        echo "<a href='home.php'>Home</a>";
-                    } else if (!isset($_SESSION)) {
-                        echo "<a href='#' onclick='document.getElementById('id01').style.display='block'' style='width:auto;'>Member Login</a>";
-                    }
+                        if($_SESSION['status'] == 'login') {
+                            echo "<a href='home.php'>Home</a>";
+                        } else if(!isset($_SESSION)) {
+                            echo "<a href='#' onclick='document.getElementById('id01').style.display='block'' style='width:auto;'>Member Login</a>";
+                        }
                     ?>
-
+                    
                     <div id="id01" class="modal">
 
                         <!-- Form login  -->
@@ -83,18 +83,18 @@ error_reporting(-1);
                             </div>
                             <!-- Input dari form login -->
 
-                            <?php
-                            if ($_SESSION['status'] != 'login') {
-                                echo "<div class='container'>";
-                                echo "<label for='uname'><b>Username</b></label>";
-                                echo "<input type='text' placeholder='Enter Username' name='username' autocomplete='off' required>";
+                            <?php 
+                                if($_SESSION['status'] != 'login') {
+                                    echo "<div class='container'>";
+                                        echo "<label for='uname'><b>Username</b></label>";
+                                        echo "<input type='text' placeholder='Enter Username' name='username' autocomplete='off' required>";
 
-                                echo "<label for='psw'><b>Password</b></label>";
-                                echo "<input type='password' placeholder='Enter Password' name='password' autocomplete='off' required>";
+                                        echo "<label for='psw'><b>Password</b></label>";
+                                        echo "<input type='password' placeholder='Enter Password' name='password' autocomplete='off' required>";
 
-                                echo "<button type='submit'>Login</button>";
-                                echo "</div>";
-                            }
+                                        echo "<button type='submit'>Login</button>";
+                                    echo "</div>";
+                                }
                             ?>
                         </form>
                     </div>
@@ -306,11 +306,11 @@ error_reporting(-1);
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
             }
-        }
-        // END OF SECONDARY
+            // END OF SECONDARY
 
         // MAIN
         $(document).ready(function() {

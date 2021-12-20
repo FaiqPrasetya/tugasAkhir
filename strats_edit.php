@@ -1,12 +1,12 @@
-<?php
+<?php 
 session_start();
 
 if ($_SESSION['status'] != 'login') {
-    header("location: index.php");
+  header("location: index.php");
 }
 
 if ($_SESSION['level'] != 1) {
-    header("Location: index.php");
+  header("Location: index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -93,14 +93,14 @@ if ($_SESSION['level'] != 1) {
             <br>
 
             <?php
-            require('backend/koneksi.php');
+              require('backend/koneksi.php');
 
-            $strats_id = $_GET['strats_id'];
+              $strats_id = $_GET['strats_id'];
 
-            $sql = "SELECT * FROM strats WHERE strats_id = '$strats_id'";
-            $content = $connect->query($sql);
+              $sql = "SELECT * FROM strats WHERE strats_id = '$strats_id'";
+              $content = $connect->query($sql);
 
-            $data = mysqli_fetch_array($content);
+              $data = mysqli_fetch_array($content);
 
             ?>
 
@@ -125,7 +125,7 @@ if ($_SESSION['level'] != 1) {
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="image">Gambar Strats</label>
                     <div class="col-sm-10">
-                        <input type="checkbox" class="" name="ubah_gambar" value="true"> Ceklis jika ingin mengubah Gambar Strats<br>
+                    <input type="checkbox" class="" name="ubah_gambar" value="true"> Ceklis jika ingin mengubah Gambar Strats<br>
                         <input type="file" class="file-control" name="strats_image">
                     </div>
                 </div>
