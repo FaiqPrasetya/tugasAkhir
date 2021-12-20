@@ -3,8 +3,6 @@ session_start();
 if ($_SESSION['status'] != 'login') {
   header("location: index.php");
 }
-
-
 require('backend/koneksi.php');
 
 $strats_id = $_GET['strats_id'];
