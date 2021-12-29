@@ -65,15 +65,6 @@ if ($_SESSION['level'] != 1) {
 
 <body id="page-top">
 
-  <?php
-  include './backend/koneksi.php';
-
-  // cek apakah user telah login, jika belum login maka di alihkan ke halaman login
-  if ($_SESSION['status'] != "login") {
-    header("location: index.php");
-  }
-  ?>
-
   <div id="wrapper">
 
     <!-- Sidebar -->

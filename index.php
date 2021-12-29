@@ -2,6 +2,8 @@
 session_start();
 
 // Hide session yang belum ada
+// Digunakan untuk menyembunyikan error session tidak ditemukan
+// Karena page index akan langsung menggunakan session bahkan sebelum user login.
 ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
 error_reporting(-1);
@@ -83,6 +85,7 @@ error_reporting(-1);
                             </div>
                             <!-- Input dari form login -->
 
+                            <!-- Login form -->
                             <?php 
                                 if($_SESSION['status'] != 'login') {
                                     echo "<div class='container'>";
